@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="fc chatbot project first commit">
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/ZsxqApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/vo/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/vo/Owner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/vo/OwnerDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/vo/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/vo/Questionee.java" afterDir="false" />
+    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="domain Zsxq model vo commit">
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/IZsxqApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/aggregates/UnAnsweredQuestionsAggregates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/res/RespData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/service/ZsxqApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/ZsxqApi.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "node.js.detected.package.eslint": "true",
@@ -102,6 +103,14 @@
       <updated>1683372333146</updated>
       <workItem from="1683372334288" duration="2575000" />
     </task>
+    <task id="LOCAL-00001" summary="domain Zsxq model vo commit">
+      <created>1683425752340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683425752340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +121,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="23_fc_zsxq_domain" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -120,5 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="domain Zsxq model vo commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain Zsxq model vo commit" />
   </component>
 </project>

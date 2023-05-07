@@ -1,6 +1,7 @@
 package org.fcproject.chatbot.api.domain.zsxq;
 
 import org.fcproject.chatbot.api.domain.zsxq.model.aggregates.UnAnsweredQuestionsAggregates;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -11,6 +12,7 @@ import java.io.IOException;
  */
 
 public interface IZsxqApi {
+
     UnAnsweredQuestionsAggregates queryUnAnsweredQuestionsTopicId(String groupId, String cookie) throws IOException;
 
     boolean answer(String groupId, String topicId, String cookie, String text, boolean silenced) throws IOException;

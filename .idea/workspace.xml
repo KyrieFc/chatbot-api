@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="domain Zsxq model vo commit">
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/IZsxqApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/aggregates/UnAnsweredQuestionsAggregates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/res/RespData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/service/ZsxqApi.java" afterDir="false" />
+    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="domain interfaces update">
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/req/AnswerReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/req/ReqData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/model/res/AnswerRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-interfaces/src/test/java/org/fcproject/chatbot/api/test/SpringBootRunTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/ZsxqApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/IZsxqApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/IZsxqApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/service/ZsxqApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/zsxq/service/ZsxqApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interfaces/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interfaces/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fcproject/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -73,7 +80,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SpringBootRunTest.test_zsxqapi">
+    <configuration name="SpringBootRunTest.test_zsxqapi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chatbot-api-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.fcproject.chatbot.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.fcproject.chatbot.api.test" />
+      <option name="MAIN_CLASS_NAME" value="org.fcproject.chatbot.api.test.SpringBootRunTest" />
+      <option name="METHOD_NAME" value="test_zsxqapi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="chatbot-api-interfaces" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.fcproject.chatbot.api.ApiApplication" />
@@ -89,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringBootRunTest.test_zsxqapi" />
         <item itemvalue="Spring Boot.ApiApplication" />
       </list>
     </recent_temporary>
@@ -110,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683425752340</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="domain interfaces update">
+      <created>1683430615768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683430615768</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="domain Zsxq model vo commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="domain Zsxq model vo commit" />
+    <MESSAGE value="domain interfaces update" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain interfaces update" />
   </component>
 </project>

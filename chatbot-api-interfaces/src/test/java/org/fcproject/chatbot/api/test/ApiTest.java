@@ -1,5 +1,6 @@
 package org.fcproject.chatbot.api.test;
 
+import org.apache.http.HttpHost;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -64,18 +65,20 @@ public class ApiTest {
 
     @Test
     public void test_chatGPT() throws IOException {
-        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        HttpHost proxy = new HttpHost("127.0.0.1", 7890, "http");
+
+        CloseableHttpClient httpClient = HttpClientBuilder.create()
+                .setProxy(proxy)
+                .build();
 
         //https://api.openai.com/v1/chat/
         HttpPost post = new HttpPost("https://api.openai.com/v1/chat/completions");
         post.addHeader("content-type", "application/json");
-        post.addHeader("Authorization", "Bearer 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");
+        post.addHeader("Authorization", "Bearer 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");
 
-        String paramJson = "{\n" +
-                "     \"model\": \"gpt-3.5-turbo\",\n" +
-                "     \"messages\": [{\"role\": \"user\", \"content\": \"帮我写一个java冒泡排序!\"}],\n" +
-                "     \"temperature\": 0.7\n" +
-                "   }";
+        //String paramJson = "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"user\",\"content\":\"帮我实现一个java冒泡排序\"}],\"temperature\":0.7}";
+        String paramJson = "{\\\"model\\\": \\\"text-davinci-003\\\", \\\"prompt\\\": \\\"帮我写一个java冒泡排序\\\", \\\"temperature\\\": 0, \\\"max_tokens\\\": 1024}";
+        System.out.println(paramJson);
 
         CloseableHttpResponse response = httpClient.execute(post);
         if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {

@@ -1,6 +1,7 @@
 package org.fcproject.chatbot.api.test;
 
 import com.alibaba.fastjson.JSON;
+import org.fcproject.chatbot.api.domain.ai.IOpenAI;
 import org.fcproject.chatbot.api.domain.zsxq.IZsxqApi;
 import org.fcproject.chatbot.api.domain.zsxq.model.aggregates.UnAnsweredQuestionsAggregates;
 import org.fcproject.chatbot.api.domain.zsxq.model.vo.Topics;
@@ -34,6 +35,8 @@ public class SpringBootRunTest {
 
     @Resource
     private IZsxqApi zsxqApi;
+    @Resource
+    private IOpenAI openAI;
 
     @Test
     public void test_zsxqapi() throws IOException {
@@ -50,5 +53,11 @@ public class SpringBootRunTest {
             //回答问题
             zsxqApi.answer(groupId, topicId, cookie, text, false);
         }
+    }
+
+    @Test
+    public void test_openai() throws IOException {
+        String response = openAI.doChatGPT("帮我实现一个java冒泡排序");
+        logger.info("测试结果: {}", response);
     }
 }

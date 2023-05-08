@@ -77,7 +77,11 @@ public class ApiTest {
         post.addHeader("Authorization", "Bearer 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");
 
         //String paramJson = "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"user\",\"content\":\"帮我实现一个java冒泡排序\"}],\"temperature\":0.7}";
-        String paramJson = "{\\\"model\\\": \\\"text-davinci-003\\\", \\\"prompt\\\": \\\"帮我写一个java冒泡排序\\\", \\\"temperature\\\": 0, \\\"max_tokens\\\": 1024}";
+        String paramJson = "{\n" +
+                "     \"model\": \"gpt-3.5-turbo\",\n" +
+                "     \"messages\": [{\"role\": \"user\", \"content\": \"帮我实现一个java冒泡排序!\"}],\n" +
+                "     \"temperature\": 0.7\n" +
+                "   }";
         System.out.println(paramJson);
 
         CloseableHttpResponse response = httpClient.execute(post);

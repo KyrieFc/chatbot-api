@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="ApiTest test_chatGPT proxy&amp;API_key update">
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/ai/IOpenAI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/ai/model/aggregates/AIAnswer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/ai/model/vo/Choices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/fcproject/chatbot/api/domain/ai/service/OpenAI.java" afterDir="false" />
+    <list default="true" id="914e7ec9-b8ee-465b-9387-01c98f129c95" name="Changes" comment="chatGPT api interface update">
+      <change afterPath="$PROJECT_DIR$/chatbot-api-application/src/main/java/org/fcproject/chatbot/api/application/job/ChatbotSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-application/src/main/java/org/fcproject/chatbot/api/application/job/FastjsonExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot-api-interfaces/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interfaces/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interfaces/src/test/java/org/fcproject/chatbot/api/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interfaces/src/test/java/org/fcproject/chatbot/api/test/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot-api-interfaces/src/test/java/org/fcproject/chatbot/api/test/SpringBootRunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interfaces/src/test/java/org/fcproject/chatbot/api/test/SpringBootRunTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="23_fc_zsxq_domain" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,43 +70,23 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "101980ac6a4103666db68c6b272dfc7c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SpringBootRunTest.test_openai">
-    <configuration name="ApiTest.test_chatGPT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chatbot-api-interfaces" />
+  <component name="RunManager" selected="Spring Boot.ApiApplication">
+    <configuration name="FastjsonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.fcproject.chatbot.api.application.job.FastjsonExample" />
+      <module name="chatbot-api-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.fcproject.chatbot.api.test.*" />
+          <option name="PATTERN" value="org.fcproject.chatbot.api.application.job.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.fcproject.chatbot.api.test" />
-      <option name="MAIN_CLASS_NAME" value="org.fcproject.chatbot.api.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_chatGPT" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootRunTest.test_openai" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chatbot-api-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.fcproject.chatbot.api.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.fcproject.chatbot.api.test" />
-      <option name="MAIN_CLASS_NAME" value="org.fcproject.chatbot.api.test.SpringBootRunTest" />
-      <option name="METHOD_NAME" value="test_openai" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,11 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringBootRunTest.test_openai" />
-        <item itemvalue="JUnit.ApiTest.test_chatGPT" />
         <item itemvalue="Spring Boot.ApiApplication" />
+        <item itemvalue="Application.FastjsonExample" />
         <item itemvalue="JUnit.SpringBootRunTest.test_zsxqapi" />
-        <item itemvalue="Spring Boot.ApiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +137,6 @@
       <option name="presentableId" value="Default" />
       <updated>1683372333146</updated>
       <workItem from="1683372334288" duration="2575000" />
-      <workItem from="1683509209916" duration="4675000" />
     </task>
     <task id="LOCAL-00001" summary="domain Zsxq model vo commit">
       <created>1683425752340</created>
@@ -175,21 +152,7 @@
       <option name="project" value="LOCAL" />
       <updated>1683430615768</updated>
     </task>
-    <task id="LOCAL-00003" summary="ApiTest test_chatGPT update">
-      <created>1683446465259</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683446465259</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ApiTest test_chatGPT proxy&amp;API_key update">
-      <created>1683509377473</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683509377473</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,8 +185,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="domain Zsxq model vo commit" />
     <MESSAGE value="domain interfaces update" />
-    <MESSAGE value="ApiTest test_chatGPT update" />
-    <MESSAGE value="ApiTest test_chatGPT proxy&amp;API_key update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ApiTest test_chatGPT proxy&amp;API_key update" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain interfaces update" />
   </component>
 </project>
